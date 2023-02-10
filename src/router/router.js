@@ -57,7 +57,7 @@ export const renderRoutes = (routes, extraProps = {}, switchProps = {}) => {
             alignItems: "center",
           }}
         >
-          <Spin tip="拼命加载中，不要催~"></Spin>
+          <Spin tip="🐟游啊游，游啊游"></Spin>
         </div>
       }
     >
