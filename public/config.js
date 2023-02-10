@@ -30,17 +30,40 @@ export default {
       //   },
       // ],
     },
+    {
+      anchor: "websites",
+      title: "网址分享",
+      show: true,
+      // children: [
+      //   {
+      //     anchor: "finance-web",
+      //     title: "平台",
+      //     show: true,
+      //   },
+      // ],
+    },
   ],
   projectList:[{
     url:'https://music.atian.work/',
     name:'YesMusic',
     desc:'一个开源的基于网易云音乐api开源音乐App，使用electorn构建，支持多端发布，部署在vercel上',
-    img:'https://raw.githubusercontent.com/Exchar/YesMusic/main/images/library.png?token=GHSAT0AAAAAAB6TCCMWYGR5YJYTNJYOFM46Y7F375A'
+    img:'https://pic1.zhimg.com/80/v2-033acfbb3b219885c155386af9838884_720w.webp'
   },{
     url:'https://musicapi.atian.work/',
     name:'MusicApi',
     desc:'网易云音乐api，使用nodejs构建，支持多端发布，部署在vercel上',
-    img:'https://raw.githubusercontent.com/Binaryify/NeteaseCloudMusicApi/master/static/docs.png'
+    img:'https://pica.zhimg.com/v2-22bea0614cf4a76b528b4360f5d26a2d_1440w.jpg?source=172ae18b'
+  }],
+  websites:[{
+    url:'https://webgradients.com/',
+    name:'webgradients',
+    desc:'还不错的生成渐变色的网站',
+    img:'https://images.shejidaren.com/wp-content/uploads/2017/02/110653nO0.jpg'
+  },{
+    url:'https://www.naiveui.com/zh-CN/os-theme',
+    name:'naiveUI',
+    desc:'一个使用Vue3+ts构建的UI库，由图森未来开源，简单易用，不错！',
+    img:'https://picx.zhimg.com/v2-9ef4c2739a9f09fa613be7f733f437d5_1440w.jpg?source=172ae18b'
   }]
 };
 

@@ -10,7 +10,7 @@ import wallPaper6 from "./../assets/img/wallpaper5.jpg";
 import wallPaper7 from "./../assets/img/wallpaper6.jpg";
 import MyIcon from "../components/MyIcon";
 import { getProjectConfig } from "../utils";
-import ProjectContent from "./Home/projects";
+import ProjectContent from "./Home/Projects";
 // import {Animation} from "../components/Animate";
 const { Link } = Anchor;
 const linksList = getProjectConfig("contentLinks").filter(
@@ -226,6 +226,23 @@ export default class Home extends Component {
                     </span>
                     <div className="content-item">
                       <ProjectContent></ProjectContent>
+                    </div>
+                  </div>
+              ):null
+            }
+            {
+              linksList.map(i=>i.anchor).includes('websites') ?(
+                  <div id="articles" className="main-title">
+                    <span
+                        className=" title-decoration"
+                        onClick={(e) =>
+                            this.handlePreventDefault(e, { href: "#websites" })
+                        }
+                    >
+                      网址分享
+                    </span>
+                    <div className="content-item">
+                      <ProjectContent type="websites"></ProjectContent>
                     </div>
                   </div>
               ):null
