@@ -10,7 +10,7 @@ import wallPaper6 from "./../assets/img/wallpaper5.jpg";
 import wallPaper7 from "./../assets/img/wallpaper6.jpg";
 import MyIcon from "../components/MyIcon";
 import { getProjectConfig } from "../utils";
-import ProjectContent from "./Home/Projects";
+import ProjectContent from "./Home/projects";
 // import {Animation} from "../components/Animate";
 const { Link } = Anchor;
 const linksList = getProjectConfig("contentLinks").filter(
