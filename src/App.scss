@@ -1,0 +1,79 @@
+
+.App {
+  *{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+//定义下拉颜色
+.ant-dropdown-menu-item.ant-dropdown-menu-item-active{
+  background-color: $primary;
+  color: $light;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*设置滚动条样式*/
+/*::-webkit-scrollbar ：滚动条整体部分，其中的属性有width,height,background,border等。
+
+::-webkit-scrollbar-button ：滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+
+::-webkit-scrollbar-track ：外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+
+::-webkit-scrollbar-track-piece ：内层轨道，具体区别看下面gif图，需要注意的就是它会覆盖第三个属性的样式。
+
+::-webkit-scrollbar-thumb ：滚动条里面可以拖动的那部分
+
+::-webkit-scrollbar-corner ：边角，两个滚动条交汇处
+
+::-webkit-resizer ：两个滚动条交汇处用于拖动调整元素大小的小控件（基本用不上）*/
+/*::-webkit-scrollbar{*/
+/*  width: 4px;*/
+/*}*/
+::-webkit-scrollbar{
+  width: 8px;
+  background: rgba(0,122,255,.1);
+  border-radius: 6px;
+  border: none;
+  position: relative;
+}
+::-webkit-scrollbar-thumb{
+  background: $lessColor;
+  border-radius: 6px;
+  transition: all .2s;
+  &:hover{
+    background: $primary;
+  }
+}
