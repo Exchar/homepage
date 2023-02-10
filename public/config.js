@@ -22,13 +22,25 @@ export default {
       anchor: "projects",
       title: "项目",
       show: true,
-      children: [
-        {
-          anchor: "finance-web",
-          title: "平台",
-          show: true,
-        },
-      ],
+      // children: [
+      //   {
+      //     anchor: "finance-web",
+      //     title: "平台",
+      //     show: true,
+      //   },
+      // ],
     },
   ],
+  projectList:[{
+    url:'https://music.atian.work/',
+    name:'YesMusic',
+    desc:'一个开源的基于网易云音乐api开源音乐App，使用electorn构建，支持多端发布，部署在vercel上',
+    img:'https://raw.githubusercontent.com/Exchar/YesMusic/main/images/library.png?token=GHSAT0AAAAAAB6TCCMWYGR5YJYTNJYOFM46Y7F375A'
+  },{
+    url:'https://musicapi.atian.work/',
+    name:'MusicApi',
+    desc:'网易云音乐api，使用nodejs构建，支持多端发布，部署在vercel上',
+    img:'https://raw.githubusercontent.com/Binaryify/NeteaseCloudMusicApi/master/static/docs.png'
+  }]
 };
+

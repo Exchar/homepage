@@ -10,6 +10,7 @@ import wallPaper6 from "./../assets/img/wallpaper5.jpg";
 import wallPaper7 from "./../assets/img/wallpaper6.jpg";
 import MyIcon from "../components/MyIcon";
 import { getProjectConfig } from "../utils";
+import ProjectContent from "./Home/projects";
 // import {Animation} from "../components/Animate";
 const { Link } = Anchor;
 const linksList = getProjectConfig("contentLinks").filter(
@@ -198,36 +199,38 @@ export default class Home extends Component {
         </div>
         <div className="mainContent">
           <div className="mainArea glass">
-            <div id="articles" className="main-title">
-              <span
-                className=" title-decoration"
-                onClick={(e) =>
-                  this.handlePreventDefault(e, { href: "#articles" })
-                }
-              >
-                文章
-              </span>
-            </div>
-            <div id="projects" className="main-title">
-              <span
-                className=" title-decoration"
-                onClick={(e) =>
-                  this.handlePreventDefault(e, { href: "#projects" })
-                }
-              >
-                项目
-              </span>
-            </div>
-            <div id="finance-web" className="main-title">
-              <span
-                  className=" title-decoration"
-                  onClick={(e) =>
-                      this.handlePreventDefault(e, { href: "#articles" })
-                  }
-              >
-                平台
-              </span>
-            </div>
+            {
+              linksList.map(i=>i.anchor).includes('articles') ?(
+                  <div id="articles" className="main-title">
+                    <span
+                        className=" title-decoration"
+                        onClick={(e) =>
+                            this.handlePreventDefault(e, { href: "#articles" })
+                        }
+                    >
+                      文章
+                    </span>
+                  </div>
+              ):null
+            }
+            {
+              linksList.map(i=>i.anchor).includes('projects') ?(
+                  <div id="articles" className="main-title">
+                    <span
+                        className=" title-decoration"
+                        onClick={(e) =>
+                            this.handlePreventDefault(e, { href: "#projects" })
+                        }
+                    >
+                      项目
+                    </span>
+                    <div className="content-item">
+                      <ProjectContent></ProjectContent>
+                    </div>
+                  </div>
+              ):null
+            }
+
           </div>
         </div>
       </div>
