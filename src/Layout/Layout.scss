@@ -74,7 +74,8 @@
   .viewPort {
     height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     //background: rgba(255,255,255,.7);
   }
   &:after {

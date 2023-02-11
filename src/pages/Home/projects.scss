@@ -1,8 +1,11 @@
 .project-container{
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
   .project-item-container{
     flex: 1;
+    max-width: calc(100% - 16px);
+    margin: 0 4px;
   }
 }
 .project-item{
