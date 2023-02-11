@@ -19,7 +19,8 @@ $dark: #3b3b3b;
   &.light{
     &:before{
       background-image: url('/assets/img/glass.jpg');
-      filter: blur(20px);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
     }
   }
   &:before {

@@ -23,7 +23,7 @@ export default class Home extends Component {
     this.state = {
       activeImg: {
         name: "画师作品1",
-        url: wallPaper1,
+        url: null,
         key: 1,
       },
       typingText: getProjectConfig("typingText"),
@@ -71,11 +71,15 @@ export default class Home extends Component {
   }
   componentDidMount() {
     this.setNowStr();
+    this.setActiveImg(this.state.imgList[0])
   }
   async setActiveImg(item) {
     const trulyUrl = await imgCompress(item.url);
+    console.log(trulyUrl)
     this.setState({
-      activeImg: trulyUrl,
+      activeImg: {
+        ...item,url:trulyUrl
+      },
     });
   }
   getMenu = () => (
@@ -176,6 +180,7 @@ export default class Home extends Component {
         </div>
         <div
           className="topImg"
+          key={this.state.activeImg.key}
           style={{
             backgroundImage: `url(${this.state.activeImg.url})`,
             backgroundRepeat: "no-repeat",

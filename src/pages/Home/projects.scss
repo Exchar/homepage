@@ -1,6 +1,9 @@
 .project-container{
   display: flex;
   flex-wrap: wrap;
+  .project-item-container{
+    flex: 1;
+  }
 }
 .project-item{
   height: 120px;
@@ -13,9 +16,9 @@
   backdrop-filter: blur(10px);
   display: flex;
   padding: 6px;
-  max-width: 400px;
-  min-width: 160px;
-  flex: 1 1 auto;
+  min-width: 60px;
+  //max-width: 400px;
+  flex: 12;
   .left-img{
     padding: 8px;
     width: 300px;
