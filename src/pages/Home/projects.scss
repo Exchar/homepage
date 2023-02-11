@@ -14,7 +14,7 @@
   width: calc(100% - 32px);
   margin: 8px 16px;
   margin-bottom: 16px;
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .99);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
@@ -22,6 +22,7 @@
   overflow: hidden;
   min-width: 60px;
   //max-width: 400px;
+  box-shadow: 0 0 5px 3px rgba(229, 229, 229, 0.4);
   flex: 12;
   .left-img{
     padding: 8px;
