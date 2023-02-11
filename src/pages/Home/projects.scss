@@ -19,6 +19,7 @@
   backdrop-filter: blur(10px);
   display: flex;
   padding: 6px;
+  overflow: hidden;
   min-width: 60px;
   //max-width: 400px;
   flex: 12;
@@ -31,6 +32,9 @@
   .right-desc{
     padding: 8px;
     font-size: 12px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -141,7 +141,7 @@ export default class Home extends Component {
   };
   render() {
     return (
-      <div style={{ width: "100%", position: "relative" }}>
+      <div style={{ width: "100%", position: "relative",overflow:"hidden" }}>
         {/*切换首页显示大图*/}
         <div className="imgSwitch animate__animated animate__bounce">
           <Dropdown
@@ -204,7 +204,11 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="mainContent">
+        <div className="mainContent" style={
+          {
+            height:'auto'
+          }
+        }>
           <div className="mainArea glass">
             {
               linksList.map(i=>i.anchor).includes('articles') ?(
