@@ -53,6 +53,26 @@ export default {
     name:'MusicApi',
     desc:'网易云音乐api，使用nodejs构建，支持多端发布，部署在vercel上',
     img:'https://pica.zhimg.com/v2-22bea0614cf4a76b528b4360f5d26a2d_1440w.jpg?source=172ae18b'
+  },{
+    url:'https://alveloe.atian.work/',
+    name:'Voleloe',
+    desc:'老版主页，使用vue2构建，魔改自Vuesme个人博客项目',
+    img:'https://ss3.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2525456878,1612246651&fm=253&gp=0.jpg'
+  },{
+    url:'https://p2pweb.atian.work/',
+    name:'P2PFinanceWeb',
+    desc:'p2p借贷后台系统-前端',
+    img:'https://ss3.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2525456878,1612246651&fm=253&gp=0.jpg'
+  },{
+    url:'https://musictest.atian.work/',
+    name:'MusicTest',
+    desc:'一个写了1%的音乐网站，懒得写了',
+    img:'https://ss3.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2525456878,1612246651&fm=253&gp=0.jpg'
+  },{
+    url:'https://vuetemplate.atian.work/',
+    name:'VueTemplate',
+    desc:'vue3+TS+vite模板，集成naiveUI，Axios，vuex，方便构建程序',
+    img:'https://ss3.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2525456878,1612246651&fm=253&gp=0.jpg'
   }],
   websites:[{
     url:'https://webgradients.com/',
