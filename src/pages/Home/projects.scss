@@ -14,7 +14,8 @@
   display: flex;
   padding: 6px;
   max-width: 400px;
-  min-width: 240px;
+  min-width: 160px;
+  flex: 1 1 auto;
   .left-img{
     padding: 8px;
     width: 300px;

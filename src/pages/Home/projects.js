@@ -28,7 +28,7 @@ export default class ProjectContent extends Component{
                         <span className='my-content-title'>{project.name}</span>
                         <div className="project-item">
                             <div className="left-img">
-                                <Image src={project.img} fallback="图片找不到了"></Image>
+                                <Image src={project.img} fallback="图片找不到了" height="100%" ></Image>
                             </div>
                             <div className="right-desc">
                                 <div className="top-desc">

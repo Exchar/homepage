@@ -8,6 +8,7 @@ import wallPaper4 from "./../assets/img/wallpaper3.jpg";
 import wallPaper5 from "./../assets/img/wallpaper4.jpg";
 import wallPaper6 from "./../assets/img/wallpaper5.jpg";
 import wallPaper7 from "./../assets/img/wallpaper6.jpg";
+import {imgCompress} from '../utils/index'
 import MyIcon from "../components/MyIcon";
 import { getProjectConfig } from "../utils";
 import ProjectContent from "./Home/projects";
@@ -71,9 +72,10 @@ export default class Home extends Component {
   componentDidMount() {
     this.setNowStr();
   }
-  setActiveImg(item) {
+  async setActiveImg(item) {
+    const trulyUrl = await imgCompress(item.url);
     this.setState({
-      activeImg: item,
+      activeImg: trulyUrl,
     });
   }
   getMenu = () => (
@@ -215,7 +217,7 @@ export default class Home extends Component {
             }
             {
               linksList.map(i=>i.anchor).includes('projects') ?(
-                  <div id="articles" className="main-title">
+                  <div id="projects" className="main-title">
                     <span
                         className=" title-decoration"
                         onClick={(e) =>
@@ -232,7 +234,7 @@ export default class Home extends Component {
             }
             {
               linksList.map(i=>i.anchor).includes('websites') ?(
-                  <div id="articles" className="main-title">
+                  <div id="websites" className="main-title">
                     <span
                         className=" title-decoration"
                         onClick={(e) =>
@@ -243,6 +245,7 @@ export default class Home extends Component {
                     </span>
                     <div className="content-item">
                       <ProjectContent type="websites"></ProjectContent>
+
                     </div>
                   </div>
               ):null
