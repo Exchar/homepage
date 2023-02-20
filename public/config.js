@@ -49,6 +49,11 @@ export default {
     desc:'一个开源的基于网易云音乐api开源音乐App，使用electorn构建，支持多端发布，部署在vercel上',
     img:'https://pic1.zhimg.com/80/v2-033acfbb3b219885c155386af9838884_720w.webp'
   },{
+    url:'https://weather.atian.work/',
+    name:'WeatherReport',
+    desc:'一个使用Vue3+ts+vite构建的天气预报网站，使用的api基于高德地图及和风天气，天气数据由和风天气提供',
+    img:'https://img.1ppt.com/uploads/allimg/2104/1_210422164529_1.JPG'
+  },{
     url:'https://musicapi.atian.work/',
     name:'MusicApi',
     desc:'网易云音乐api，使用nodejs构建，支持多端发布，部署在vercel上',
@@ -57,22 +62,22 @@ export default {
     url:'https://alveloe.atian.work/',
     name:'Voleloe',
     desc:'老版主页，使用vue2构建，魔改自Vuesme个人博客项目',
-    img:'https://ss3.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2525456878,1612246651&fm=253&gp=0.jpg'
+    img:'https://img.1ppt.com/uploads/allimg/2104/1_210422164529_1.JPG'
   },{
     url:'https://p2pweb.atian.work/',
     name:'P2PFinanceWeb',
     desc:'p2p借贷后台系统-前端',
-    img:'https://ss3.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2525456878,1612246651&fm=253&gp=0.jpg'
+    img:'https://img.1ppt.com/uploads/allimg/2104/1_210422164529_1.JPG'
   },{
     url:'https://musictest.atian.work/',
     name:'MusicTest',
     desc:'一个写了1%的音乐网站，懒得写了',
-    img:'https://ss3.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2525456878,1612246651&fm=253&gp=0.jpg'
+    img:'https://img.1ppt.com/uploads/allimg/2104/1_210422164529_1.JPG'
   },{
     url:'https://vuetemplate.atian.work/',
     name:'VueTemplate',
     desc:'vue3+TS+vite模板，集成naiveUI，Axios，vuex，方便构建程序',
-    img:'https://ss3.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2525456878,1612246651&fm=253&gp=0.jpg'
+    img:'https://img.1ppt.com/uploads/allimg/2104/1_210422164529_1.JPG'
   }],
   websites:[{
     url:'https://webgradients.com/',
